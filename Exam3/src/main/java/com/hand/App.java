@@ -16,7 +16,9 @@ public class App
         Map<Integer,List<Integer>> map=makeNum.makeMap(list);
 
         map=sort(map);
-
+        for(int i=0;i<10;i++){
+            System.out.println(map.get(i));
+        }
     }
 
     // 排序算法
@@ -29,7 +31,6 @@ public class App
             dataMap.put(e.getKey(),list);
         }
 
-        System.out.println("Sorted Map: "+dataMap);
         return dataMap;
     }
 
