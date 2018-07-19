@@ -15,14 +15,12 @@ public class App
         List<Integer> list=makeNum.makeNumber(50,100);
         Map<Integer,List<Integer>> map=makeNum.makeMap(list);
 
+        map=sort(map);
 
-        for(int i=0;i<10;i++){
-            System.out.println(map.get(i));
-        }
     }
 
     // 排序算法
-    public Map<Integer,List<Integer>> sort(Map<Integer,List<Integer>> dataMap){
+    public static Map<Integer,List<Integer>> sort(Map<Integer,List<Integer>> dataMap){
 
         for (Map.Entry<Integer,List<Integer>> e:dataMap.entrySet())
         {
